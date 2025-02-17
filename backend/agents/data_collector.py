@@ -13,7 +13,7 @@ import os
 class DataCollector:
 
     def __init__(self):
-        self.cache = Cache(ttl=Config.CACHE_TTL)
+        self.cache = Cache()
         self.headers = {'X-CMC_PRO_API_KEY': Config.COINMARKETCAP_API_KEY}
         self.client = openai.OpenAI(api_key=Config.OPENAI_API_KEY)
         self.news_api_key= Config.NEWS_API_KEY
@@ -95,7 +95,7 @@ class DataCollector:
                 'social_sentiment': self.social_analyst.analyze_reddit_sentiment(reddit_posts),
                 'timestamp': datetime.now().isoformat()
             }
-            self.cache.set(f'{symbol}_data', processed_data)
+            self.cache.set(f'{symbol}_data', processed_data,3600)
             return processed_data
         except Exception as e:
             print(f"Error fetching data for {symbol}: {e}")
@@ -224,7 +224,7 @@ class DataCollector:
         # Convert the grouped projects dictionary into a JSON-formatted string.
         # This will serve as the context for our AI agent.
         available_projects_str = json.dumps(grouped_projects, indent=2)
-        self.cache.set(cache_key, available_projects_str, 864000)
+        self.cache.set(cache_key, grouped_projects, 864000)
         #print("Available Projects by Category:")
         #print(available_projects_str)
-        return available_projects_str
+        return grouped_projects
