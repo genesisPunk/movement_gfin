@@ -5,7 +5,7 @@ load_dotenv()
 
 
 class Config:
-    COINMARKETCAP_API_KEY = "a8168dad-bb06-4e8a-9e44-f67d98511fce"
+    COINMARKETCAP_API_KEY = "YOUR_COINMARKETCAP_API_KEY"
     OPENAI_API_KEY = "YOUR_OPENAI_API_KEY"
 
     # CoinMarketCap API Endpoints
@@ -16,14 +16,14 @@ class Config:
     PRICE_API_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest"
     HISTORICAL_API_URL = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/historical"
     # RAG Configuration
-    VECTOR_STORE_PATH = r"C:\Users\deepak.c.agrawal\Projects\crypto\backend\rag\vector_store"
-    HISTORICAL_DATA_PATH = r"C:\Users\deepak.c.agrawal\Projects\crypto\backend\rag\historical_data.csv"
+    VECTOR_STORE_PATH = r"\backend\rag\vector_store"
+    HISTORICAL_DATA_PATH = r"\backend\rag\historical_data.csv"
 
     #News API KEY
-    NEWS_API_KEY= "229f6615529444469653600821ad18c1"
+    NEWS_API_KEY= "YOUR_NEWS_API_KEY"
     # Cache Settings
     CACHE_TTL = 300  # 5 minutes
     #Reddit APIs
-    REDDIT_CLIENT_ID="NR_0JrFeYHIie4SUnA-Wew"
-    REDDIT_CLIENT_SECRET="K155b6U4aMqBeLLdZiTKPLjKcBJu0g"
-    REDDIT_USER_AGENT = "TradeAnalysis/1.0 by RevolutionaryEmu9147"
+    REDDIT_CLIENT_ID="YOUR_REDDIT_CLIENT_ID"
+    REDDIT_CLIENT_SECRET="YOUR_REDDIT_CLIENT_SECRET"
+    REDDIT_USER_AGENT = "YOUR_REDDIT_USER_AGENT_NAME"
