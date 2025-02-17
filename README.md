@@ -13,7 +13,7 @@
 
 # Steps to Run Backend
 1. Navigate to backend directory
-2. Update all the keys in Config.py
+2. Update all the secrets in Config.py
 3. Create virtual environment (Windows)
     python -m venv venv
 4. Activate virtual environment (Windows)
