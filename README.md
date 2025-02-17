@@ -10,3 +10,23 @@
 
 # Tech Stack
 ![tech_stack](https://github.com/genesisPunk/movement_gfin/blob/4f0ee0ff09de24f2f0a1ba845baf649bbb5a4354/techstack.png)
+
+# Steps to Run Backend
+1. Navigate to backend directory
+2. Update all the keys in Config.py
+3. Create virtual environment (Windows)
+    python -m venv venv
+4. Activate virtual environment (Windows)
+    .\venv\Scripts\activate
+5. Install Python dependencies
+   pip install -r requirements.txt
+6.  Run FastAPI server
+   uvicorn main:app --reload --port 8001
+
+# Steps to Run Frontend
+On different terminal 
+1. Navigate to frontend directory
+2. Run npm install
+3. If you get dependency errors, try: (optional)
+   npm install --force
+4. npm start
