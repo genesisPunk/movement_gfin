@@ -31,8 +31,8 @@ class GoalRequest(BaseModel):
 @app.post("/submit_goal")
 async def handle_goal(request: GoalRequest):
     all_analyses = []
-    symbols=['MOVE','APTOS','SUI','DEFI']
-    #application_data = collector.fetch_application_data()
+    symbols=['MOVE','WBTC','WETH','USDT','USDC']
+    application_data = collector.fetch_application_data()
     for symbol in symbols:
         crypto_data = collector.get_crypto_data(symbol)
         if not crypto_data:
@@ -46,9 +46,11 @@ async def handle_goal(request: GoalRequest):
             'symbol': symbol,
             'market': market_analysis,
             'sentiment': sentiment_analysis,
-            'social_sentiment': social_sentiment
+            'social_sentiment': social_sentiment,
+            'applications': application_data
         })
-        recommendations = recommender.get_recommendations(request, all_analyses)
+    recommendations = recommender.get_recommendations(request, all_analyses)
+    print(recommendations)
     bus.publish('recommendations', {
         "goal": request.user_goal,
         "actions": recommendations,
