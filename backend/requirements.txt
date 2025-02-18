@@ -18,3 +18,4 @@ vaderSentiment
 praw
 numpy
 textblob
+gunicorn
