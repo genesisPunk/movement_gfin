@@ -26,4 +26,4 @@ class Config:
     #Reddit APIs
     REDDIT_CLIENT_ID=os.environ["REDDIT_CLIENT_ID"]
     REDDIT_CLIENT_SECRET=os.environ["REDDIT_CLIENT_SECRET"]
-    REDDIT_USER_AGENT =os.environ["REDDIT_USER_AGENT_NAME"]
+    REDDIT_USER_AGENT =os.environ["REDDIT_USER_AGENT"]
