@@ -6,6 +6,7 @@ from agents.news_analyst import NewsAnalyst
 from agents.action_recommender import ActionRecommender
 from utils.message_bus import MessageBus
 from agents.market_analyst import MarketAnalyst
+import uvicorn
 
 app = FastAPI()
 
@@ -65,3 +66,8 @@ async def execute_action(action: str):
     from agents.execution_agent import ExecutionAgent
     executor = ExecutionAgent()
     return executor.execute_action(action)
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))  # Use Render's PORT variable
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=port)
