@@ -7,6 +7,7 @@ from agents.action_recommender import ActionRecommender
 from utils.message_bus import MessageBus
 from agents.market_analyst import MarketAnalyst
 import uvicorn
+import os  # Required for PORT
 
 app = FastAPI()
 
@@ -67,7 +68,12 @@ async def execute_action(action: str):
     executor = ExecutionAgent()
     return executor.execute_action(action)
 
+
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 10000))  # Use Render's PORT variable
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
