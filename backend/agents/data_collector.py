@@ -16,7 +16,7 @@ class DataCollector:
     def __init__(self):
         self.cache = Cache()
         self.headers = {'X-CMC_PRO_API_KEY': Config.COINMARKETCAP_API_KEY}
-        self.client = ChatGroq(temperature=0.5,model_name="llama-3.1-8b-instant", groq_api_key=os.getenv('GROQ_API_KEY')
+        self.client = ChatGroq(temperature=0.5,model_name="llama-3.1-8b-instant", groq_api_key=os.getenv('GROQ_API_KEY'))
         self.news_api_key= Config.NEWS_API_KEY
         self.news_api_url = 'https://newsapi.org/v2/everything'
         self.social_analyst = SocialSentimentAnalyst()
