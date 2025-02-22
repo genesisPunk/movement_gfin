@@ -4,10 +4,13 @@ from rag.historical_data_loader import load_historical_data
 from config import Config
 import random
 import numpy as np
+from langchain_groq import ChatGroq
+import os
 
 class ActionRecommender:
     def __init__(self):
-        self.llm = ChatOpenAI(model="gpt-4", api_key=Config.OPENAI_API_KEY)
+        self.llm = ChatGroq(temperature=0.5,model_name="llama-3.1-8b-instant", groq_api_key=os.getenv('GROQ_API_KEY')
+)
 
     # Keep _interpret_analysis unchanged
     def _interpret_analysis(self, market_data, sentiment_data):
