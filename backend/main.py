@@ -9,7 +9,11 @@ from utils.message_bus import MessageBus
 from agents.market_analyst import MarketAnalyst
 import uvicorn
 
-app = FastAPI()
+app = FastAPI(
+    title="Movement token analysis",
+    description="API for analyzing movement tokens and smart contracts using multiple specialized agents",
+    version="1.0.0"
+)
 
 # CORS Middleware
 app.add_middleware(
@@ -20,10 +24,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Define routes FIRST
-@app.get("/health")
-async def health_check():
-    return {"status": "ok"}
+@app.get("/")
+async def root():
+    return {"message": "Movement Agent API is running"}
 
 class GoalRequest(BaseModel):
     user_goal: str
@@ -87,6 +90,10 @@ async def startup_event():
     except Exception as e:
         print("ERROR on startup:", e)
 
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+    
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 10000))  # Use Render's PORT variable
     uvicorn.run("main:app", host="0.0.0.0", port=port)
