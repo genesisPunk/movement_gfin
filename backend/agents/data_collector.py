@@ -82,7 +82,7 @@ class DataCollector:
             
             # Example: Fetch historical data via API (adjust based on actual API)
             # historical_prices = pd.read_csv(rf"\backend\historical_data\{symbol.upper()}_historical.csv")
-            historical_prices = pd.read_csv(r"backend/historical_data/{}_historical.csv".format(symbol.upper()))
+            historical_prices = pd.read_csv(r"historical_data/{}_historical.csv".format(symbol.upper()))
             
             news = self.fetch_news(f"{symbol} cryptocurrency")
 
