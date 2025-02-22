@@ -9,8 +9,7 @@ import os
 
 class ActionRecommender:
     def __init__(self):
-        self.llm = ChatGroq(temperature=0.5,model_name="llama-3.1-8b-instant", groq_api_key=os.getenv('GROQ_API_KEY')
-)
+        self.llm = ChatGroq(temperature=0.5,model_name="llama-3.1-8b-instant", groq_api_key=os.getenv('GROQ_API_KEY'))
 
     # Keep _interpret_analysis unchanged
     def _interpret_analysis(self, market_data, sentiment_data):
