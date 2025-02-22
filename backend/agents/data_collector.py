@@ -81,7 +81,7 @@ class DataCollector:
             price_data = price_res.json().get('data', {}).get(symbol, {})
             
             # Example: Fetch historical data via API (adjust based on actual API)
-            historical_prices = pd.read_csv(rf"C:\Users\deepak.c.agrawal\Projects\crypto\backend\historical_data\{symbol.upper()}_historical.csv")
+            historical_prices = pd.read_csv(rf"\backend\historical_data\{symbol.upper()}_historical.csv")
             
             news = self.fetch_news(f"{symbol} cryptocurrency")
 
