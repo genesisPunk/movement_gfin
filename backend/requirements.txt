@@ -19,3 +19,4 @@ praw
 numpy
 textblob
 gunicorn
+langchain-groq
