@@ -2,6 +2,8 @@ import praw  # Python Reddit API Wrapper
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from config import Config
+from langchain_groq import ChatGroq
+import os
 
 class SocialSentimentAnalyst:
     def __init__(self):
@@ -11,7 +13,7 @@ class SocialSentimentAnalyst:
             user_agent=Config.REDDIT_USER_AGENT
         )
         self.analyzer = SentimentIntensityAnalyzer()
-        self.llm = ChatOpenAI(model="gpt-3.5-turbo", api_key=Config.OPENAI_API_KEY)
+        self.llm = ChatGroq(temperature=0.5,model_name="llama-3.1-8b-instant", groq_api_key=os.getenv('GROQ_API_KEY')
 
     def fetch_reddit_posts(self, crypto_name, limit=50):
         """Fetch recent Reddit posts about a cryptocurrency"""
