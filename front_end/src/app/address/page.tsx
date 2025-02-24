@@ -3,8 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Pie, Line } from "react-chartjs-2";
-import { useWallet } from "@razorlabs/razorkit";
-import { useAccountBalance } from "@razorlabs/razorkit";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -40,9 +38,10 @@ interface CoinStoreEntry {
   };
 }
 
-export default function Home() {
-  const wallet = useWallet();
-  const { error, loading, balance } = useAccountBalance();
+import { useSearchParams } from "next/navigation";
+
+export default function AddressPage() {
+  const [loading, setLoading] = useState(true);
   const [tokenData, setTokenData] = useState<
     { tokenName: string; balance: number }[]
   >([]);
@@ -50,37 +49,60 @@ export default function Home() {
     []
   );
 
+  const searchParams = useSearchParams();
+  const address = searchParams.get("address");
+
   const fetchTokenData = async () => {
     try {
+      setLoading(true);
       const response = await fetch(
-        "https://aptos.testnet.porto.movementlabs.xyz/v1/accounts/0x321eb620be9256c91989117a515eb4d1d08869aec0cc7002e39223cd17ef723b/resources"
+        `https://aptos.testnet.porto.movementlabs.xyz/v1/accounts/${address}/resources`
       );
 
       const data = await response.json();
-      console.log(data);
-      // Filter only "0x1::coin::CoinStore" types & exclude AptosCoin
-      const filteredData = data.filter(
-        (entry: CoinStoreEntry) =>
-          entry.type.startsWith("0x1::coin::CoinStore") &&
-          !entry.type.includes("AptosCoin")
+      // Filter only "0x1::coin::CoinStore"
+      const filteredData = data.filter((entry: CoinStoreEntry) =>
+        entry.type.startsWith("0x1::coin::CoinStore")
       );
 
+      console.log(filteredData);
+
       // Extract token name, address & balance data
-      return filteredData
+      const dataFormatted = filteredData
         .map((entry: CoinStoreEntry) => {
-          const match = entry.type.match(/CoinStore<([^:]+::tokens::)(\w+)>/);
-          if (match) {
+          let tokenName = null;
+
+          // Check if it's AptosCoin separately
+          if (entry.type.includes("aptos_coin::AptosCoin")) {
+            tokenName = "Move"; // Rename AptosCoin to "Move"
+          } else {
+            // Extract token names from other tokens
+            const match = entry.type.match(
+              /CoinStore<[^:]+::(?:tokens::)?([\w]+)>/
+            );
+            if (match) {
+              tokenName = match[1];
+            }
+          }
+
+          if (tokenName) {
             return {
-              tokenName: match[2],
+              tokenName,
               balance: (Number(entry.data?.coin?.value) || 0) / 1e8 || 0,
             };
           }
+
           return null;
         })
         .filter(Boolean);
+
+      console.log(dataFormatted);
+      return dataFormatted;
     } catch (error) {
       console.error("Error fetching data:", error);
       return [];
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -88,12 +110,13 @@ export default function Home() {
     const fetchInfo = async () => {
       const fetchedTokenData = await fetchTokenData();
       // Add "MOVE" token data (if available)
-      const chartData = { tokenName: "MOVE", balance: Number(balance) / 1e8 }; // Convert balance
+      //   const chartData = { tokenName: "MOVE", balance: Number(balance) / 1e8 }; // Convert balance
 
       const combinedData: { tokenName: string; balance: number }[] = [
         ...fetchedTokenData,
-        chartData,
+        // chartData,
       ];
+
       setTokenData(combinedData);
 
       // Mock trend data for the last 7 days
@@ -110,7 +133,7 @@ export default function Home() {
     };
 
     fetchInfo();
-  }, [balance]);
+  }, [address]);
 
   // Generate Pie Chart Data
   const pieChartData = {
@@ -153,12 +176,7 @@ export default function Home() {
 
   return (
     <div className="p-4 space-y-4">
-      <span className="text-2xl font-bold">
-        Chain - {wallet?.chain?.name || "Unknown"}, Balance:{" "}
-        {(Number(balance) / 1e8).toFixed(8) || "0"}
-      </span>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         {/* Pie Chart Card */}
         <Card>
           <CardHeader>
@@ -168,7 +186,7 @@ export default function Home() {
             {loading ? (
               <p>Loading token data...</p>
             ) : tokenData.length > 0 ? (
-              <div className="w-full h-[400px]">
+              <div className="w-full h-[310px] md:h-[400px]">
                 {" "}
                 {/* Full width, fixed height */}
                 <Pie data={pieChartData} />
@@ -188,7 +206,7 @@ export default function Home() {
             {loading ? (
               <p>Loading trend data...</p>
             ) : trendData.length > 0 ? (
-              <div className="w-full h-[400px]">
+              <div className="w-full h-[240px] md:h-[400px]">
                 {" "}
                 {/* Full width, fixed height */}
                 <Line

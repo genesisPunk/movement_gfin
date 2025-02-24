@@ -15,6 +15,7 @@ import "@mosaicag/swap-widget/style.css";
 import "./globals.css";
 import LandingPage from "@/components/LandingPage";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function RootLayout({
   children,
@@ -35,6 +36,10 @@ export default function RootLayout({
 function LayoutContent({ children }: { children: React.ReactNode }) {
   const wallet = useWallet();
   const pathname = usePathname();
+
+  if (pathname.startsWith("/address")) {
+    return <Suspense>{children}</Suspense>;
+  }
 
   // Show landing page if wallet is NOT connected
   if (!wallet.connected) {

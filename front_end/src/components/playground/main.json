@@ -1,6 +1,6 @@
 {
-  "goal": "heya",
-  "recommendations": "Cryptocurrency Recommendations:\nMOVE: Hold (1.0%) - Despite the price drop and low RSI, the trend is up and there's bullish momentum indicated. The neutral social sentiment also suggests no immediate cause for concern.\nWBTC: Buy (31.4%) - WBTC had a significant price increase recently and has a bullish sentiment. The social sentiment is neutral, but the high reddit score and overall trend positivity could potentially show future growth.\nUSDC: Buy (14.0%) - Despite no change in price, USDC has a bullish sentiment and high confidence in its social sentiment. The key themes discussed suggest potential for growth and engagement in the community, indicating it could be a good longer-term investment.\n\nMovement Ecosystem Recommendations:\nAxal: 31.3% - exhibits promising TVL growth and transaction volume trends\nBinance Wallet: 17.5% - exhibits promising TVL growth and transaction volume trends\nChainsight: 4.800000000000001% - demonstrates high community engagement and DAO participation\n\nNote: Total allocated percentage: 100%\n1. Suggested allocations represent target portfolio weights\n2. Adjust based on your risk tolerance and existing positions\n3. Rebalance when price targets or market conditions change",
+  "goal": "I want to 2x my money",
+  "recommendations": "Cryptocurrency Recommendations:\n**MOVE**: Sell (1.2%) - The significant price drop in recent periods and the neutral overall sentiment on Reddit suggest a potential for further decline. The bullish momentum indicated by the MACD crossover is not enough to counterbalance the negative price change and neutral sentiment.\n**WBTC**: Buy (9.1%) - The 128.29% price increase in recent periods and the moderate confidence level on Reddit suggest a potential for further growth. However, the neutral overall sentiment and the potential for market manipulation through promotional posts should be considered.\n**USDC**: Sell (38.5%) - The neutral overall sentiment and the lack of clear bullish sentiment on Reddit suggest a cautious approach. The 0.00% price change and the bearish trend also indicate a potential for further decline.\n\nMovement Ecosystem Recommendations:\nBRKT (Bracket): 36.7% - has strategic partnerships within the Movement ecosystem\nBRKT (Bracket): 1.4% - has strategic partnerships within the Movement ecosystem\nBolt Liquidity: 13.1% - features innovative tokenomics models\n\nNote: Total allocated percentage: 100%\n1. Suggested allocations represent target portfolio weights\n2. Adjust based on your risk tolerance and existing positions\n3. Rebalance when price targets or market conditions change",
   "analysis": [
     {
       "symbol": "MOVE",
@@ -27,42 +27,1327 @@
         ]
       },
       "sentiment": {
-        "sentiment": "neutral",
-        "confidence": 3.43,
-        "key_events": [
-          {
-            "title": "Over 900K Ethereum Withdrawn From Exchanges In 10 Days – Bullish Surge On The Horizon?",
-            "source": "Bitcoinist",
-            "sentiment": "bearish",
-            "confidence": 50
-          }
-        ],
-        "source_analysis": {
-          "ZyCrypto": {
-            "sentiment": "neutral",
-            "confidence": 4.545454545454545
-          },
-          "Bitcoinist": {
-            "sentiment": "bearish",
-            "confidence": 50
-          },
-          "newsBTC": {
-            "sentiment": "bullish",
-            "confidence": 14.16287878787879
-          },
-          "Ambcrypto.com": {
-            "sentiment": "neutral",
-            "confidence": 0
-          }
-        }
+        "error": "Invalid news data"
       },
       "social_sentiment": {
-        "vader_score": 0.423452,
-        "weighted_score": 0.4991544129591192,
-        "llm_analysis": "- Overall Sentiment: Neutral\n- Confidence: 70\n- Key Themes: Exchanges, Moving to Ireland, Stacking ETH, Bitcoin reserve hearing, BTC holdings, ETF\n- Anomalies: The sentiment seems to be neutral with a mix of different topics related to cryptocurrencies such as exchanges listing Pi, moving to Ireland, stacking ETH, and discussions about Bitcoin holdings moving to ETFs. There are no clear signs of market manipulation in these posts.",
+        "vader_score": 0.628334,
+        "weighted_score": 0.20356102788883013,
+        "llm_analysis": "Based on the provided Reddit posts, here's the analysis:\n\n- **Overall Sentiment:** Neutral\n- **Confidence:** 40 (Moderate uncertainty)\n- **Key Themes:** Cryptocurrency regulation, ETFs, wallet security, and analyst opinions on market trends\n- **Anomalies:** \n\n  1. **Time-travel post**: The first post seems unusual, as it mentions being \"from the future.\" This could be a joke or a legitimate post, but it's unclear and may be a sign of market manipulation or a troll post.\n  2. **Personal crisis post**: The second post mentions being \"Honeytrapped and getting blackmailed,\" which is unrelated to the cryptocurrency market and seems out of place in a subreddit focused on cryptocurrency.\n  3. **Mixed tone posts**: The last three posts seem to be more neutral and informative, discussing ETFs, wallet security, and analyst opinions. However, the tone of the first two posts is unclear and may indicate a lack of confidence in the market.\n  4. **Lack of clear market sentiment**: The overall sentiment of the posts is neutral, but the tone of some posts may indicate underlying uncertainty or skepticism. The lack of clear sentiment makes it difficult to determine the overall market confidence level.\n\nConsidering the anomalies and the neutral overall sentiment, it's challenging to make a definitive conclusion about the market confidence level. However, the moderate uncertainty score of 40 suggests that investors may be cautious and uncertain about the future of the cryptocurrency market.",
         "post_count": 50,
-        "average_upvotes": 53.64,
-        "average_comments": 28.96
+        "average_upvotes": 87.42,
+        "average_comments": 22.78
+      },
+      "applications": {
+        "DeFi": [
+          {
+            "name": "Abel Finance",
+            "link": "https://abelfinance.xyz/#/markets",
+            "description": "The First Cross-Chain Lending Platform Build on Sui, Aptos and Movement*  1. Coin and \"AMM LP Coin\" and NFT are supported for lending  2. Support cross-chain lending  3. Make awesome multi chain assets liquidity  4. Official Treas...",
+            "categories": ["DeFi"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "Arche Protocol",
+            "link": "https://www.archeprotocol.xyz/home",
+            "description": "Arche brings you a smarter, more reliable stablecoin, powered by the Move ecosystem.",
+            "categories": ["DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Avitus",
+            "link": "https://www.avituslabs.xyz/",
+            "description": "Open and permissionless derivative protocol boosting DeFi TVL. Allowing any asset to be used as collateral and to provide liquidity.",
+            "categories": ["DeFi"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Canopy",
+            "link": "https://www.canopyhub.xyz/",
+            "description": "Canopy is a decentralized yield marketplace built to simplify and optimize liquidity deployment in DeFi.",
+            "categories": ["Infrastructure", "DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Cedro",
+            "link": "https://cedro.finance/",
+            "description": "Lend and Borrow across multiple chains",
+            "categories": ["DeFi"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "ClobX",
+            "link": "https://clobx.io/",
+            "description": "Fully on-chain Central Limit Order Book (CLOB) system on Movement.",
+            "categories": ["DeFi"],
+            "languages": ["SuiMove"]
+          }
+        ],
+        "Social": [
+          {
+            "name": "Acanet",
+            "link": "https://app.acanet.io/",
+            "description": "Acanet is a Web3 social financial platform that brings together traders, investors, and enthusiasts in a transparent and collaborative ecosystem.",
+            "categories": ["Social", "NFT"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "CapyGo",
+            "link": "https://www.capygo.io/",
+            "description": "Social paradise on movement: Be a capy, find your vibe & earn while chilling!  Be capy, be happy! Join our cozy fam",
+            "categories": ["Gaming", "Social"],
+            "languages": ["AptosMove"]
+          }
+        ],
+        "NFT": [
+          {
+            "name": "Acanet",
+            "link": "https://app.acanet.io/",
+            "description": "Acanet is a Web3 social financial platform that brings together traders, investors, and enthusiasts in a transparent and collaborative ecosystem.",
+            "categories": ["Social", "NFT"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Arkai 🏛️",
+            "link": "https://x.com/arkaiworld",
+            "description": "Arkai NFT embarks on a journey to explore the mysteries of AI, ancient art, and the Movement chain, unknowingly becoming a key builder in shaping the movement’s future, laying the very bricks that will define its legacy.",
+            "categories": ["NFT"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Bandit Network",
+            "link": "https://bandit.network/",
+            "description": "Quest and NFT Launchpad, Growth Toolkit for Web3",
+            "categories": ["NFT", "Analytics"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "AI": [
+          {
+            "name": "Axal",
+            "link": "https://ax.al/",
+            "description": "Axal is creating a network of verifiable agents to execute any task",
+            "categories": ["AI", "Infrastructure"],
+            "languages": ["AptosMove", "Solidity"]
+          }
+        ],
+        "Infrastructure": [
+          {
+            "name": "Axal",
+            "link": "https://ax.al/",
+            "description": "Axal is creating a network of verifiable agents to execute any task",
+            "categories": ["AI", "Infrastructure"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Binstep",
+            "link": "https://binstep.xyz",
+            "description": "BinStep is a Telegram trading bot tailored for Move-based blockchains",
+            "categories": ["Infrastructure", "Wallet"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "BlockVision",
+            "link": "https://blockvision.org",
+            "description": "BlockVision offers blockchain infrastructure, specializing in RPC nodes, APIs, and explorers.",
+            "categories": ["Infrastructure", "Analytics"],
+            "languages": ["SuiMove", "Solidity"]
+          },
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          },
+          {
+            "name": "Canopy",
+            "link": "https://www.canopyhub.xyz/",
+            "description": "Canopy is a decentralized yield marketplace built to simplify and optimize liquidity deployment in DeFi.",
+            "categories": ["Infrastructure", "DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Other": [
+          {
+            "name": "Babylon",
+            "link": "https://babylonchain.io/",
+            "description": "Unlocking 21 Million Bitcoins to Secure the Decentralized Economy",
+            "categories": ["Other"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Analytics": [
+          {
+            "name": "Bandit Network",
+            "link": "https://bandit.network/",
+            "description": "Quest and NFT Launchpad, Growth Toolkit for Web3",
+            "categories": ["NFT", "Analytics"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BlockVision",
+            "link": "https://blockvision.org",
+            "description": "BlockVision offers blockchain infrastructure, specializing in RPC nodes, APIs, and explorers.",
+            "categories": ["Infrastructure", "Analytics"],
+            "languages": ["SuiMove", "Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Wallet": [
+          {
+            "name": "Binance Wallet",
+            "link": "https://chromewebstore.google.com/detail/bnb-chain-wallet/fhbohimaelbohpjbbldcngcnapndodjp",
+            "description": "",
+            "categories": ["Wallet"],
+            "languages": []
+          },
+          {
+            "name": "Binstep",
+            "link": "https://binstep.xyz",
+            "description": "BinStep is a Telegram trading bot tailored for Move-based blockchains",
+            "categories": ["Infrastructure", "Wallet"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "Bitget Wallet",
+            "link": "https://web3.bitget.com",
+            "description": "Formerly known as BitKeep , Bitget Wallet stands as Asia's largest and a global frontrunner among all-in-one Web3 multi-chain wallets. We offer a comprehensive range of on-chain products and DeFi services to our users, including w...",
+            "categories": ["Wallet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Testnet": [
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Mobile": [
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          }
+        ],
+        "Gaming": [
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "CapyGo",
+            "link": "https://www.capygo.io/",
+            "description": "Social paradise on movement: Be a capy, find your vibe & earn while chilling!  Be capy, be happy! Join our cozy fam",
+            "categories": ["Gaming", "Social"],
+            "languages": ["AptosMove"]
+          }
+        ],
+        "Investor": [
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          }
+        ]
+      }
+    },
+    {
+      "symbol": "WBTC",
+      "market": {
+        "price_change": "128.29%",
+        "current_price": 97488.95,
+        "recent_trend": "up",
+        "sma": {
+          "3": 97137.83,
+          "5": 96918.736
+        },
+        "ema": {
+          "5": 97145.3638,
+          "10": 97386.1342
+        },
+        "rsi": 41.83,
+        "macd": {
+          "macd": -915.8503,
+          "signal": -729.0506
+        },
+        "trend_strength": [
+          "Bearish MACD crossover",
+          "Bearish EMA crossover (5<10)"
+        ]
+      },
+      "sentiment": {
+        "error": "Invalid news data"
+      },
+      "social_sentiment": {
+        "vader_score": 0.8934666666666667,
+        "weighted_score": 0.8934666666666667,
+        "llm_analysis": "Based on the provided Reddit post, here's the analysis:\n\n- **Overall Sentiment:** Neutral\nThe post appears to be a promotional alert rather than an opinion-based post, so it doesn't convey a clear sentiment. However, the use of \"Crypto Alert\" and \"🚨\" might suggest a sense of urgency or importance, but without further context, it's hard to determine if it's positive or negative.\n\n- **Confidence:** 60\nThe post is from a specific user ($YOI AI) and seems to be promoting a project (Stalkchain) with a referral code. This could indicate a moderate level of confidence, but it's essential to note that this might be a biased or sponsored post rather than an unbiased opinion from a neutral source.\n\n- **Key Themes:** Cryptocurrency, Stalkchain, referral codes, AI-curated content\nThe post is primarily focused on promoting a cryptocurrency project (Stalkchain) and an AI-curated content platform.\n\n- **Anomalies:** \n1. The post seems to be promoting a specific project (Stalkchain) with a referral code, which could be a sign of market manipulation or at least a biased promotion.\n2. The use of \"🚨 Crypto Alert\" might be an attempt to create a sense of urgency or importance, which could be seen as manipulative.\n3. The post doesn't provide any in-depth analysis or insights about the cryptocurrency market, which is unusual for a \"daily crypto digest\" post. This might indicate that the post is more promotional than informative.",
+        "post_count": 3,
+        "average_upvotes": 1,
+        "average_comments": 0
+      },
+      "applications": {
+        "DeFi": [
+          {
+            "name": "Abel Finance",
+            "link": "https://abelfinance.xyz/#/markets",
+            "description": "The First Cross-Chain Lending Platform Build on Sui, Aptos and Movement*  1. Coin and \"AMM LP Coin\" and NFT are supported for lending  2. Support cross-chain lending  3. Make awesome multi chain assets liquidity  4. Official Treas...",
+            "categories": ["DeFi"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "Arche Protocol",
+            "link": "https://www.archeprotocol.xyz/home",
+            "description": "Arche brings you a smarter, more reliable stablecoin, powered by the Move ecosystem.",
+            "categories": ["DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Avitus",
+            "link": "https://www.avituslabs.xyz/",
+            "description": "Open and permissionless derivative protocol boosting DeFi TVL. Allowing any asset to be used as collateral and to provide liquidity.",
+            "categories": ["DeFi"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Canopy",
+            "link": "https://www.canopyhub.xyz/",
+            "description": "Canopy is a decentralized yield marketplace built to simplify and optimize liquidity deployment in DeFi.",
+            "categories": ["Infrastructure", "DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Cedro",
+            "link": "https://cedro.finance/",
+            "description": "Lend and Borrow across multiple chains",
+            "categories": ["DeFi"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "ClobX",
+            "link": "https://clobx.io/",
+            "description": "Fully on-chain Central Limit Order Book (CLOB) system on Movement.",
+            "categories": ["DeFi"],
+            "languages": ["SuiMove"]
+          }
+        ],
+        "Social": [
+          {
+            "name": "Acanet",
+            "link": "https://app.acanet.io/",
+            "description": "Acanet is a Web3 social financial platform that brings together traders, investors, and enthusiasts in a transparent and collaborative ecosystem.",
+            "categories": ["Social", "NFT"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "CapyGo",
+            "link": "https://www.capygo.io/",
+            "description": "Social paradise on movement: Be a capy, find your vibe & earn while chilling!  Be capy, be happy! Join our cozy fam",
+            "categories": ["Gaming", "Social"],
+            "languages": ["AptosMove"]
+          }
+        ],
+        "NFT": [
+          {
+            "name": "Acanet",
+            "link": "https://app.acanet.io/",
+            "description": "Acanet is a Web3 social financial platform that brings together traders, investors, and enthusiasts in a transparent and collaborative ecosystem.",
+            "categories": ["Social", "NFT"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Arkai 🏛️",
+            "link": "https://x.com/arkaiworld",
+            "description": "Arkai NFT embarks on a journey to explore the mysteries of AI, ancient art, and the Movement chain, unknowingly becoming a key builder in shaping the movement’s future, laying the very bricks that will define its legacy.",
+            "categories": ["NFT"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Bandit Network",
+            "link": "https://bandit.network/",
+            "description": "Quest and NFT Launchpad, Growth Toolkit for Web3",
+            "categories": ["NFT", "Analytics"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "AI": [
+          {
+            "name": "Axal",
+            "link": "https://ax.al/",
+            "description": "Axal is creating a network of verifiable agents to execute any task",
+            "categories": ["AI", "Infrastructure"],
+            "languages": ["AptosMove", "Solidity"]
+          }
+        ],
+        "Infrastructure": [
+          {
+            "name": "Axal",
+            "link": "https://ax.al/",
+            "description": "Axal is creating a network of verifiable agents to execute any task",
+            "categories": ["AI", "Infrastructure"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Binstep",
+            "link": "https://binstep.xyz",
+            "description": "BinStep is a Telegram trading bot tailored for Move-based blockchains",
+            "categories": ["Infrastructure", "Wallet"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "BlockVision",
+            "link": "https://blockvision.org",
+            "description": "BlockVision offers blockchain infrastructure, specializing in RPC nodes, APIs, and explorers.",
+            "categories": ["Infrastructure", "Analytics"],
+            "languages": ["SuiMove", "Solidity"]
+          },
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          },
+          {
+            "name": "Canopy",
+            "link": "https://www.canopyhub.xyz/",
+            "description": "Canopy is a decentralized yield marketplace built to simplify and optimize liquidity deployment in DeFi.",
+            "categories": ["Infrastructure", "DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Other": [
+          {
+            "name": "Babylon",
+            "link": "https://babylonchain.io/",
+            "description": "Unlocking 21 Million Bitcoins to Secure the Decentralized Economy",
+            "categories": ["Other"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Analytics": [
+          {
+            "name": "Bandit Network",
+            "link": "https://bandit.network/",
+            "description": "Quest and NFT Launchpad, Growth Toolkit for Web3",
+            "categories": ["NFT", "Analytics"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BlockVision",
+            "link": "https://blockvision.org",
+            "description": "BlockVision offers blockchain infrastructure, specializing in RPC nodes, APIs, and explorers.",
+            "categories": ["Infrastructure", "Analytics"],
+            "languages": ["SuiMove", "Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Wallet": [
+          {
+            "name": "Binance Wallet",
+            "link": "https://chromewebstore.google.com/detail/bnb-chain-wallet/fhbohimaelbohpjbbldcngcnapndodjp",
+            "description": "",
+            "categories": ["Wallet"],
+            "languages": []
+          },
+          {
+            "name": "Binstep",
+            "link": "https://binstep.xyz",
+            "description": "BinStep is a Telegram trading bot tailored for Move-based blockchains",
+            "categories": ["Infrastructure", "Wallet"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "Bitget Wallet",
+            "link": "https://web3.bitget.com",
+            "description": "Formerly known as BitKeep , Bitget Wallet stands as Asia's largest and a global frontrunner among all-in-one Web3 multi-chain wallets. We offer a comprehensive range of on-chain products and DeFi services to our users, including w...",
+            "categories": ["Wallet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Testnet": [
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Mobile": [
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          }
+        ],
+        "Gaming": [
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "CapyGo",
+            "link": "https://www.capygo.io/",
+            "description": "Social paradise on movement: Be a capy, find your vibe & earn while chilling!  Be capy, be happy! Join our cozy fam",
+            "categories": ["Gaming", "Social"],
+            "languages": ["AptosMove"]
+          }
+        ],
+        "Investor": [
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          }
+        ]
+      }
+    },
+    {
+      "symbol": "WETH",
+      "market": {
+        "price_change": "4.17%",
+        "current_price": 2629.0232,
+        "recent_trend": "down",
+        "sma": {
+          "3": 2654.416,
+          "5": 2630.0666
+        },
+        "ema": {
+          "5": 2631.1978,
+          "10": 2611.3598
+        },
+        "rsi": 53.56,
+        "macd": {
+          "macd": -127.6634,
+          "signal": -172.8494
+        },
+        "trend_strength": [
+          "Bullish MACD crossover",
+          "Bullish EMA crossover (5>10)"
+        ]
+      },
+      "sentiment": {
+        "error": "Invalid news data"
+      },
+      "social_sentiment": {
+        "vader_score": 0.0040999999999999925,
+        "weighted_score": -0.01990788732394372,
+        "llm_analysis": "Based on the provided Reddit post, here's the analysis:\n\n- **Overall Sentiment:** Bearish\nThe post suggests that \"extreme FUD\" (fear, uncertainty, and doubt) is expected from bears, implying a negative sentiment towards the market.\n\n- **Confidence:** 40\nThe post's tone is somewhat ominous, but it doesn't express a high level of confidence in the market's direction. The language used is more cautionary than assertive.\n\n- **Key Themes:** Market manipulation, FUD, bearish sentiment, Bitcoin, extreme market fluctuations\nThe post focuses on the potential for market manipulation and the expected bearish sentiment from the bears.\n\n- **Anomalies:** None notable\nThe post doesn't contain any anomalies or unusual language that would suggest potential market manipulation. However, the mention of \"extreme FUD\" and the expectation of bearish sentiment could be seen as a form of subtle market manipulation, as it may influence the reader's perception of the market.",
+        "post_count": 2,
+        "average_upvotes": 37.5,
+        "average_comments": 4
+      },
+      "applications": {
+        "DeFi": [
+          {
+            "name": "Abel Finance",
+            "link": "https://abelfinance.xyz/#/markets",
+            "description": "The First Cross-Chain Lending Platform Build on Sui, Aptos and Movement*  1. Coin and \"AMM LP Coin\" and NFT are supported for lending  2. Support cross-chain lending  3. Make awesome multi chain assets liquidity  4. Official Treas...",
+            "categories": ["DeFi"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "Arche Protocol",
+            "link": "https://www.archeprotocol.xyz/home",
+            "description": "Arche brings you a smarter, more reliable stablecoin, powered by the Move ecosystem.",
+            "categories": ["DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Avitus",
+            "link": "https://www.avituslabs.xyz/",
+            "description": "Open and permissionless derivative protocol boosting DeFi TVL. Allowing any asset to be used as collateral and to provide liquidity.",
+            "categories": ["DeFi"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Canopy",
+            "link": "https://www.canopyhub.xyz/",
+            "description": "Canopy is a decentralized yield marketplace built to simplify and optimize liquidity deployment in DeFi.",
+            "categories": ["Infrastructure", "DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Cedro",
+            "link": "https://cedro.finance/",
+            "description": "Lend and Borrow across multiple chains",
+            "categories": ["DeFi"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "ClobX",
+            "link": "https://clobx.io/",
+            "description": "Fully on-chain Central Limit Order Book (CLOB) system on Movement.",
+            "categories": ["DeFi"],
+            "languages": ["SuiMove"]
+          }
+        ],
+        "Social": [
+          {
+            "name": "Acanet",
+            "link": "https://app.acanet.io/",
+            "description": "Acanet is a Web3 social financial platform that brings together traders, investors, and enthusiasts in a transparent and collaborative ecosystem.",
+            "categories": ["Social", "NFT"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "CapyGo",
+            "link": "https://www.capygo.io/",
+            "description": "Social paradise on movement: Be a capy, find your vibe & earn while chilling!  Be capy, be happy! Join our cozy fam",
+            "categories": ["Gaming", "Social"],
+            "languages": ["AptosMove"]
+          }
+        ],
+        "NFT": [
+          {
+            "name": "Acanet",
+            "link": "https://app.acanet.io/",
+            "description": "Acanet is a Web3 social financial platform that brings together traders, investors, and enthusiasts in a transparent and collaborative ecosystem.",
+            "categories": ["Social", "NFT"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Arkai 🏛️",
+            "link": "https://x.com/arkaiworld",
+            "description": "Arkai NFT embarks on a journey to explore the mysteries of AI, ancient art, and the Movement chain, unknowingly becoming a key builder in shaping the movement’s future, laying the very bricks that will define its legacy.",
+            "categories": ["NFT"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Bandit Network",
+            "link": "https://bandit.network/",
+            "description": "Quest and NFT Launchpad, Growth Toolkit for Web3",
+            "categories": ["NFT", "Analytics"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "AI": [
+          {
+            "name": "Axal",
+            "link": "https://ax.al/",
+            "description": "Axal is creating a network of verifiable agents to execute any task",
+            "categories": ["AI", "Infrastructure"],
+            "languages": ["AptosMove", "Solidity"]
+          }
+        ],
+        "Infrastructure": [
+          {
+            "name": "Axal",
+            "link": "https://ax.al/",
+            "description": "Axal is creating a network of verifiable agents to execute any task",
+            "categories": ["AI", "Infrastructure"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Binstep",
+            "link": "https://binstep.xyz",
+            "description": "BinStep is a Telegram trading bot tailored for Move-based blockchains",
+            "categories": ["Infrastructure", "Wallet"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "BlockVision",
+            "link": "https://blockvision.org",
+            "description": "BlockVision offers blockchain infrastructure, specializing in RPC nodes, APIs, and explorers.",
+            "categories": ["Infrastructure", "Analytics"],
+            "languages": ["SuiMove", "Solidity"]
+          },
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          },
+          {
+            "name": "Canopy",
+            "link": "https://www.canopyhub.xyz/",
+            "description": "Canopy is a decentralized yield marketplace built to simplify and optimize liquidity deployment in DeFi.",
+            "categories": ["Infrastructure", "DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Other": [
+          {
+            "name": "Babylon",
+            "link": "https://babylonchain.io/",
+            "description": "Unlocking 21 Million Bitcoins to Secure the Decentralized Economy",
+            "categories": ["Other"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Analytics": [
+          {
+            "name": "Bandit Network",
+            "link": "https://bandit.network/",
+            "description": "Quest and NFT Launchpad, Growth Toolkit for Web3",
+            "categories": ["NFT", "Analytics"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BlockVision",
+            "link": "https://blockvision.org",
+            "description": "BlockVision offers blockchain infrastructure, specializing in RPC nodes, APIs, and explorers.",
+            "categories": ["Infrastructure", "Analytics"],
+            "languages": ["SuiMove", "Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Wallet": [
+          {
+            "name": "Binance Wallet",
+            "link": "https://chromewebstore.google.com/detail/bnb-chain-wallet/fhbohimaelbohpjbbldcngcnapndodjp",
+            "description": "",
+            "categories": ["Wallet"],
+            "languages": []
+          },
+          {
+            "name": "Binstep",
+            "link": "https://binstep.xyz",
+            "description": "BinStep is a Telegram trading bot tailored for Move-based blockchains",
+            "categories": ["Infrastructure", "Wallet"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "Bitget Wallet",
+            "link": "https://web3.bitget.com",
+            "description": "Formerly known as BitKeep , Bitget Wallet stands as Asia's largest and a global frontrunner among all-in-one Web3 multi-chain wallets. We offer a comprehensive range of on-chain products and DeFi services to our users, including w...",
+            "categories": ["Wallet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Testnet": [
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Mobile": [
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          }
+        ],
+        "Gaming": [
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "CapyGo",
+            "link": "https://www.capygo.io/",
+            "description": "Social paradise on movement: Be a capy, find your vibe & earn while chilling!  Be capy, be happy! Join our cozy fam",
+            "categories": ["Gaming", "Social"],
+            "languages": ["AptosMove"]
+          }
+        ],
+        "Investor": [
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          }
+        ]
+      }
+    },
+    {
+      "symbol": "USDT",
+      "market": {
+        "price_change": "0.05%",
+        "current_price": 1.000255,
+        "recent_trend": "up",
+        "sma": {
+          "3": 1.0004,
+          "5": 1.0005
+        },
+        "ema": {
+          "5": 1.0004,
+          "10": 1.0004
+        },
+        "rsi": 49.71,
+        "macd": {
+          "macd": 0.0001,
+          "signal": 0.0001
+        },
+        "trend_strength": [
+          "Bearish MACD crossover",
+          "Bearish EMA crossover (5<10)"
+        ]
+      },
+      "sentiment": {
+        "error": "Invalid news data"
+      },
+      "social_sentiment": {
+        "vader_score": 0.690248,
+        "weighted_score": 0.7416713360091736,
+        "llm_analysis": "Based on the provided Reddit posts, here's the analysis:\n\n- **Overall Sentiment:** Bearish\nThe posts seem to focus on potential risks and negative events in the cryptocurrency market, such as the possibility of a USDT collapse, ransomware group activities, and regulatory pressures (MiCA). This suggests a bearish sentiment.\n\n- **Confidence:** 20\nThe posts convey a sense of uncertainty and risk, which may indicate lower confidence levels among investors. The mention of a ransomware group's activities and potential market manipulation also contributes to this assessment.\n\n- **Key Themes:** Tether (USDT) collapse risk, ransomware group activities, regulatory pressures (MiCA), cryptocurrency laundering, market manipulation.\n\n- **Anomalies:** \n- The post about the ransomware group's activities could be seen as a sign of potential market manipulation, as it highlights the involvement of cryptocurrencies in illicit activities, which might negatively impact investor confidence.\n- The post about Kraken mulling a USD stablecoin due to USDT removal is a neutral topic but still contributes to the overall bearish sentiment.\n- The post about Pi supply making high prices almost impossible is a neutral topic that doesn't directly affect the overall sentiment but could be seen as a reminder of the challenges in the cryptocurrency market.\n- The post about HIRE A PROFESSIONAL TO RECOVER CRYPTOCURRENCY BITCOIN USST USDT appears to be a spam or scam post, which is not relevant to the overall sentiment analysis but indicates potential spam or manipulation in the community.",
+        "post_count": 50,
+        "average_upvotes": 51.6,
+        "average_comments": 19.72
+      },
+      "applications": {
+        "DeFi": [
+          {
+            "name": "Abel Finance",
+            "link": "https://abelfinance.xyz/#/markets",
+            "description": "The First Cross-Chain Lending Platform Build on Sui, Aptos and Movement*  1. Coin and \"AMM LP Coin\" and NFT are supported for lending  2. Support cross-chain lending  3. Make awesome multi chain assets liquidity  4. Official Treas...",
+            "categories": ["DeFi"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "Arche Protocol",
+            "link": "https://www.archeprotocol.xyz/home",
+            "description": "Arche brings you a smarter, more reliable stablecoin, powered by the Move ecosystem.",
+            "categories": ["DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Avitus",
+            "link": "https://www.avituslabs.xyz/",
+            "description": "Open and permissionless derivative protocol boosting DeFi TVL. Allowing any asset to be used as collateral and to provide liquidity.",
+            "categories": ["DeFi"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Canopy",
+            "link": "https://www.canopyhub.xyz/",
+            "description": "Canopy is a decentralized yield marketplace built to simplify and optimize liquidity deployment in DeFi.",
+            "categories": ["Infrastructure", "DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Cedro",
+            "link": "https://cedro.finance/",
+            "description": "Lend and Borrow across multiple chains",
+            "categories": ["DeFi"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "ClobX",
+            "link": "https://clobx.io/",
+            "description": "Fully on-chain Central Limit Order Book (CLOB) system on Movement.",
+            "categories": ["DeFi"],
+            "languages": ["SuiMove"]
+          }
+        ],
+        "Social": [
+          {
+            "name": "Acanet",
+            "link": "https://app.acanet.io/",
+            "description": "Acanet is a Web3 social financial platform that brings together traders, investors, and enthusiasts in a transparent and collaborative ecosystem.",
+            "categories": ["Social", "NFT"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "CapyGo",
+            "link": "https://www.capygo.io/",
+            "description": "Social paradise on movement: Be a capy, find your vibe & earn while chilling!  Be capy, be happy! Join our cozy fam",
+            "categories": ["Gaming", "Social"],
+            "languages": ["AptosMove"]
+          }
+        ],
+        "NFT": [
+          {
+            "name": "Acanet",
+            "link": "https://app.acanet.io/",
+            "description": "Acanet is a Web3 social financial platform that brings together traders, investors, and enthusiasts in a transparent and collaborative ecosystem.",
+            "categories": ["Social", "NFT"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Arkai 🏛️",
+            "link": "https://x.com/arkaiworld",
+            "description": "Arkai NFT embarks on a journey to explore the mysteries of AI, ancient art, and the Movement chain, unknowingly becoming a key builder in shaping the movement’s future, laying the very bricks that will define its legacy.",
+            "categories": ["NFT"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Bandit Network",
+            "link": "https://bandit.network/",
+            "description": "Quest and NFT Launchpad, Growth Toolkit for Web3",
+            "categories": ["NFT", "Analytics"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "AI": [
+          {
+            "name": "Axal",
+            "link": "https://ax.al/",
+            "description": "Axal is creating a network of verifiable agents to execute any task",
+            "categories": ["AI", "Infrastructure"],
+            "languages": ["AptosMove", "Solidity"]
+          }
+        ],
+        "Infrastructure": [
+          {
+            "name": "Axal",
+            "link": "https://ax.al/",
+            "description": "Axal is creating a network of verifiable agents to execute any task",
+            "categories": ["AI", "Infrastructure"],
+            "languages": ["AptosMove", "Solidity"]
+          },
+          {
+            "name": "Binstep",
+            "link": "https://binstep.xyz",
+            "description": "BinStep is a Telegram trading bot tailored for Move-based blockchains",
+            "categories": ["Infrastructure", "Wallet"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "BlockVision",
+            "link": "https://blockvision.org",
+            "description": "BlockVision offers blockchain infrastructure, specializing in RPC nodes, APIs, and explorers.",
+            "categories": ["Infrastructure", "Analytics"],
+            "languages": ["SuiMove", "Solidity"]
+          },
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          },
+          {
+            "name": "Canopy",
+            "link": "https://www.canopyhub.xyz/",
+            "description": "Canopy is a decentralized yield marketplace built to simplify and optimize liquidity deployment in DeFi.",
+            "categories": ["Infrastructure", "DeFi"],
+            "languages": ["AptosMove"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Other": [
+          {
+            "name": "Babylon",
+            "link": "https://babylonchain.io/",
+            "description": "Unlocking 21 Million Bitcoins to Secure the Decentralized Economy",
+            "categories": ["Other"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Analytics": [
+          {
+            "name": "Bandit Network",
+            "link": "https://bandit.network/",
+            "description": "Quest and NFT Launchpad, Growth Toolkit for Web3",
+            "categories": ["NFT", "Analytics"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "BlockVision",
+            "link": "https://blockvision.org",
+            "description": "BlockVision offers blockchain infrastructure, specializing in RPC nodes, APIs, and explorers.",
+            "categories": ["Infrastructure", "Analytics"],
+            "languages": ["SuiMove", "Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Wallet": [
+          {
+            "name": "Binance Wallet",
+            "link": "https://chromewebstore.google.com/detail/bnb-chain-wallet/fhbohimaelbohpjbbldcngcnapndodjp",
+            "description": "",
+            "categories": ["Wallet"],
+            "languages": []
+          },
+          {
+            "name": "Binstep",
+            "link": "https://binstep.xyz",
+            "description": "BinStep is a Telegram trading bot tailored for Move-based blockchains",
+            "categories": ["Infrastructure", "Wallet"],
+            "languages": ["AptosMove", "SuiMove"]
+          },
+          {
+            "name": "Bitget Wallet",
+            "link": "https://web3.bitget.com",
+            "description": "Formerly known as BitKeep , Bitget Wallet stands as Asia's largest and a global frontrunner among all-in-one Web3 multi-chain wallets. We offer a comprehensive range of on-chain products and DeFi services to our users, including w...",
+            "categories": ["Wallet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Testnet": [
+          {
+            "name": "Blazpay",
+            "link": "www.blazpay.com",
+            "description": "A holistic crypto financial platform catering to both individuals and enterprises, covering every aspect of the process from start to finish.",
+            "categories": ["DeFi", "Social", "Testnet"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "Chainsight",
+            "link": "https://chainsight.network/",
+            "description": "Deploy custom indexers, oracles, and data workflows across chains. Chainsight is a modular data hub that makes any data source widely available on-chain and provides tools for developers to create protocol-owned data infrastructur...",
+            "categories": ["DeFi", "Infrastructure", "Analytics", "Testnet"],
+            "languages": ["Solidity"]
+          }
+        ],
+        "Mobile": [
+          {
+            "name": "Bolt Liquidity",
+            "link": "https://boltliquidity.com",
+            "description": "Bolt Liquidity is a plug-and-play solution providing near-zero slippage for cross-chain and native swaps, ensuring robust, on-demand liquidity for DeFi applications.",
+            "categories": ["DeFi", "Infrastructure", "Mobile"],
+            "languages": ["SuiMove", "AptosMove"]
+          }
+        ],
+        "Gaming": [
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          },
+          {
+            "name": "CapyGo",
+            "link": "https://www.capygo.io/",
+            "description": "Social paradise on movement: Be a capy, find your vibe & earn while chilling!  Be capy, be happy! Join our cozy fam",
+            "categories": ["Gaming", "Social"],
+            "languages": ["AptosMove"]
+          }
+        ],
+        "Investor": [
+          {
+            "name": "BRKT (Bracket)",
+            "link": "https://brkt.gg",
+            "description": "On-chain prediction market",
+            "categories": ["DeFi", "Gaming", "Social", "Other", "Investor"],
+            "languages": ["Solidity"]
+          }
+        ]
+      }
+    },
+    {
+      "symbol": "USDC",
+      "market": {
+        "price_change": "0.00%",
+        "current_price": 0.9999,
+        "recent_trend": "down",
+        "sma": {
+          "3": 0.9999,
+          "5": 0.9999
+        },
+        "ema": {
+          "5": 0.9999,
+          "10": 0.9999
+        },
+        "rsi": 40,
+        "macd": {
+          "macd": 0,
+          "signal": 0
+        },
+        "trend_strength": [
+          "Bearish MACD crossover",
+          "Bearish EMA crossover (5<10)"
+        ]
+      },
+      "sentiment": {
+        "error": "Invalid news data"
+      },
+      "social_sentiment": {
+        "vader_score": 0.7633066666666665,
+        "weighted_score": 0.8064535179582647,
+        "llm_analysis": "Based on the given Reddit posts, here's the analysis:\n\n- **Overall Sentiment:** Neutral\n- **Confidence:** 60\n- **Key Themes:** Cryptocurrency listings, airdrops, community-owned coins, exchange guides, price volatility\n- **Anomalies:**\n\n1. **Potential Market Manipulation Sign:** The post \"Pi supply make high price almost impossible\" could be interpreted as a bearish sentiment, potentially influencing market prices. However, without more context or a clear understanding of the Pi supply dynamics, it's difficult to determine the authenticity of this claim.\n2. **Lack of Clear Bullish Sentiment:** There are no posts that explicitly express a strong bullish sentiment, which is unusual given the nature of cryptocurrency discussions on Reddit.\n3. **Neutral and Bearish Posts:** The majority of the posts are neutral or bearish, which could indicate a cautious market sentiment.\n4. **Lack of Investor Confidence:** The confidence level is relatively low (60), indicating that investors may be uncertain or skeptical about the cryptocurrency market.\n\nOverall, the sentiment analysis suggests a neutral market, with a slight lean towards bearishness. However, it's essential to note that this analysis is based on a limited dataset and may not accurately represent the broader market sentiment.",
+        "post_count": 45,
+        "average_upvotes": 15.577777777777778,
+        "average_comments": 17.08888888888889
       },
       "applications": {
         "DeFi": [

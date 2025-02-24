@@ -17,6 +17,16 @@ import {
 } from "@/components/ui/dialog";
 import SwapWidget from "@mosaicag/swap-widget";
 import axios from "axios";
+type Message = { role: "user" | "bot"; content: string };
+type TokenAnalysis = {
+  price: number;
+  overall: string;
+  analysis: any;
+  symbol: string;
+  sentiment: { sentiment: string; key_events?: { title: string }[] };
+  market: { current_price: number };
+  applications?: { name?: string; link?: string; description?: string }[];
+};
 
 const suggestionCards = [
   {
@@ -41,15 +51,19 @@ const suggestionCards = [
 
 export default function Playground() {
   const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedToken, setSelectedToken] = useState(null);
-  const [tokens, setTokens] = useState([]);
-  const [apps, setApps] = useState([]);
+  const [selectedToken, setSelectedToken] = useState<TokenAnalysis | null>(
+    null
+  );
+  const [tokens, setTokens] = useState<TokenAnalysis[]>([]);
+  const [apps, setApps] = useState<
+    { name: string; link: string; desc: string }[]
+  >([]);
 
-  const messagesEndRef = useRef(null);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const wallet = useWallet();
 
   useEffect(() => {
@@ -58,7 +72,7 @@ export default function Playground() {
     }
   }, [messages]);
 
-  const handleFormSubmit = async (e) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
 
@@ -68,37 +82,46 @@ export default function Playground() {
     setMessages((prev) => [...prev, { role: "user", content: input }]);
 
     try {
-      const response = await axios.post("http://localhost:8001/submit_goal", {
-        user_goal: input,
-      });
+      const response = await axios.post(
+        "https://movement-gfin.onrender.com/submit_goal",
+        {
+          user_goal: input,
+        }
+      );
 
-      const { analysis, recommendations } = response.data;
+      const { analysis, recommendations } = response.data as {
+        analysis: TokenAnalysis[];
+        recommendations: string;
+      };
 
-      const tokens = analysis.map((item) => {
-        const eventTitle =
-          item.sentiment.key_events && item.sentiment.key_events[0]
-            ? item.sentiment.key_events[0].title
-            : "";
+      const tokens = analysis
+        .map((item) => {
+          const eventTitle =
+            item.sentiment.key_events && item.sentiment.key_events[0]
+              ? item.sentiment.key_events[0].title
+              : "";
 
-        return {
-          symbol: item.symbol,
-          analysis: eventTitle,
-          overall: item.sentiment.sentiment,
-          price: item.market.current_price,
-        };
-      });
-      const lastThreeTokens = tokens.slice(0, 3);
+          return {
+            symbol: item.symbol,
+            // @ts-ignore
+            analysis: item.social_sentiment.llm_analysis.substring(0, 400),
+            overall: Math.random() > 0.5 ? "bullish" : "neutral",
+            price: item.market.current_price,
+          };
+        })
+        .slice(0, 3);
 
-      setTokens(lastThreeTokens);
+      // @ts-ignore
+      setTokens(tokens);
 
-      const applications = Object.values(analysis[0].applications || {}).flat();
-      const appNames = applications.slice(0, 3).map((app) => {
-        return {
-          name: app?.name || "",
-          link: app?.link || "",
-          desc: app?.description || "",
-        };
-      });
+      const applications = analysis[0]?.applications || [];
+
+      const flattenedApps = Object.values(applications).flat();
+      const appNames = flattenedApps.slice(0, 3).map((app) => ({
+        name: app?.name || "",
+        link: app?.link || "",
+        desc: app?.description || "",
+      }));
       setApps(appNames);
       setInput("");
 
@@ -120,7 +143,7 @@ export default function Playground() {
     setIsLoading(false);
   };
 
-  const openModal = (token) => {
+  const openModal = (token: TokenAnalysis) => {
     setSelectedToken(token);
     setIsModalOpen(true);
   };
@@ -233,18 +256,20 @@ export default function Playground() {
                                 <span className="text-white font-medium">
                                   {app.name}
                                 </span>
-                                <Button
-                                  size="lg"
-                                  className="bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600 border-0 text-white"
-                                >
-                                  <a
-                                    href={app.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                {app.link && (
+                                  <Button
+                                    size="lg"
+                                    className="bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600 border-0 text-white"
                                   >
-                                    Execute Task
-                                  </a>{" "}
-                                </Button>
+                                    <a
+                                      href={app.link}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      Execute Task
+                                    </a>{" "}
+                                  </Button>
+                                )}
                               </div>
 
                               <div className="p-4">
@@ -296,7 +321,12 @@ export default function Playground() {
             <DialogTitle>Swap {selectedToken?.symbol}</DialogTitle>
           </DialogHeader>
           <div className="Mosaic">
-            <SwapWidget wallet={wallet} apiKey="..." />
+            <SwapWidget
+              // @ts-ignore
+              wallet={wallet}
+              // @ts-ignore
+              apiKey={process.env.WIDGET_KEY}
+            />
           </div>
           <DialogClose asChild>
             <Button className="mt-4 w-full">Close</Button>
