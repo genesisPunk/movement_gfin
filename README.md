@@ -3,7 +3,7 @@
 
 
 # Brief Architecture
-![brief_architecture](https://github.com/genesisPunk/movement_gfin/blob/4f0ee0ff09de24f2f0a1ba845baf649bbb5a4354/brief_architecture.png)
+![brief_architecture](https://github.com/genesisPunk/movement_gfin/blob/31d171ea89f4784ae3a6e88538b8211211cbdd7c/brief_architecture.png) 
 
 # Tech Stack
 ![tech_stack](https://github.com/genesisPunk/movement_gfin/blob/4f0ee0ff09de24f2f0a1ba845baf649bbb5a4354/techstack.png)
